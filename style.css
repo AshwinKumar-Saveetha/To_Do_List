@@ -1,0 +1,140 @@
+/* General Page Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+header{
+  width: 100%;
+  background-color: #2e7d32;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+}
+footer{
+  width: 100%;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+}
+header { top: 0; }
+footer {
+  bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Todo Container */
+.todo-container {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto 70px auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+/* Input Box */
+.todo-input {
+  width: 100%;
+  padding: 10px 5px;
+  border: 2px solid #b2dfdb;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.todo-input:focus {
+  border-color: #00796b;
+}
+
+/* Filter Bar */
+.filter-bar {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.filter-bar button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #6fc897;
+  color: #1a191b;
+  transition: background 0.3s;
+}
+.filter-bar button.active {
+  background: #4caf50;
+  color: white;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-item {
+  background: #f1f8e9;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+.todo-item:hover {
+  background: #dcedc8;
+}
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Buttons */
+.todo-buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.complete-btn {
+  background-color: #00796b;
+  color: white;
+}
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .todo-container {
+    width: 90%;
+    margin: 120px auto 80px auto;
+    padding: 20px;
+  }
+}
